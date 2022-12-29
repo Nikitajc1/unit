@@ -23,4 +23,22 @@ public class CashbackTest {
 
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void rer() {
+
+        int expected = 100;
+        int actual = service.remain(900);
+
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void remainIf1000junit5() {
+
+        int expected = 0;
+        int actual = service.remain(1000);
+
+        Assert.assertEquals(expected, actual);
+    }
 }
